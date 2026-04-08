@@ -38,7 +38,6 @@ builder
 const exp: string = builder.generate();
 console.log({ exp });
 
-// ======== executing something that's not defined in the types
 const hello: boolean = true;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const expression: any = (Pact as any).anything.you.like.to

@@ -6618,7 +6618,6 @@ var kadenaCrypto$1 = {exports: {}};
 	  };
 	  
 	  // HELPER FUNCTIONS
-	  // ================
 	  
 	  var INVALID_BASE64_RE = /[^+/0-9A-Za-z-_]/g;
 	  

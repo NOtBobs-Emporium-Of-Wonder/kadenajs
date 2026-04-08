@@ -34,7 +34,6 @@ export const lexer: Lexer = moo.compile({
   },
   symbol: /'[%#+\-_&$@<>=?*!|\/a-zA-Z0-9]+/,
   comment: { match: /;;?.*$/, lineBreaks: true },
-  // ======== LITERALS ========
   dot: '.',
   power: '^',
   lparen: '(',

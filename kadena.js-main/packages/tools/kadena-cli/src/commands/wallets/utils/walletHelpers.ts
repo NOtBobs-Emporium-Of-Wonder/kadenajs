@@ -8,9 +8,7 @@ export const logWalletInfo = (
   filepath: string,
   publicKey: string,
 ): void => {
-  log.info('====================================================');
   log.info('== 🚨 IMPORTANT: Mnemonic Phrase 🚨 ==');
-  log.info('====================================================');
   log.info(log.color.green('Mnemonic Phrase:'));
   log.info(words);
   log.info(
@@ -19,7 +17,6 @@ export const logWalletInfo = (
         `This phrase is the KEY to recover your wallet. Losing it means losing access to your assets.\n`,
     ),
   );
-  log.info('====================================================\n');
   log.info(log.color.green('First keypair generated'));
   log.info(`publicKey: ${publicKey}\n`);
   log.info(log.color.green('Wallet Storage Location'));

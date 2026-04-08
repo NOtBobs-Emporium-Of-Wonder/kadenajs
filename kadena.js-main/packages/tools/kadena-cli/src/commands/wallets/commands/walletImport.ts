@@ -49,9 +49,7 @@ export const createImportWalletCommand: (
 
       loading.succeed('Wallet imported successfully\n');
 
-      log.info('====================================================');
       log.info('== 🚨 IMPORTANT: Mnemonic Phrase 🚨 ==');
-      log.info('====================================================');
       log.info(log.color.green('Mnemonic Phrase:'));
       log.info(config.mnemonicFile);
       log.info(
@@ -60,7 +58,6 @@ export const createImportWalletCommand: (
             `This phrase is the KEY to recover your wallet. Losing it means losing access to your assets.\n`,
         ),
       );
-      log.info('====================================================\n');
 
       log.info(log.color.green('Wallet Storage Location'));
       log.info(relativeToCwd(wallet.filepath));
