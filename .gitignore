@@ -1,0 +1,16 @@
+
+# GitShuks auto-ignore
+node_modules/
+.next/
+__pycache__/
+.venv/
+venv/
+target/
+.cache/
+.turbo/
+.nuxt/
+.output/
+*.pack
+.fuse_hidden*
+*.swp
+.DS_Store
