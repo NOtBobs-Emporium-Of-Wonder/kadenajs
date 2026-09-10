@@ -2,7 +2,7 @@ import { createTransactionBuilder, type ChainId, type ICommand } from '@kadena/c
 import { type Account, connect, initSpireKey, sign } from '@kadena/spirekey-sdk';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { l1Client } from '../client';
-import { CHAIN_ID, NETWORK_ID, SPIREKEY_HOST } from '../env';
+import { CHAIN_ID, FAUCET_API_BASE, NETWORK_ID, SPIREKEY_HOST } from '../env';
 
 export type Step = 'connect' | 'fund' | 'transfer' | 'result';
 
@@ -107,7 +107,7 @@ export function useSpireKey() {
     setStatus({ kind: 'loading', label: 'Requesting testnet faucet…' });
     try {
       const res = await fetch(
-        'https://faucet.testnet.chainweb.com/coin/fund-account',
+        `${FAUCET_API_BASE}/coin/fund-account`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

@@ -22,12 +22,12 @@ export type { Account } from '@kadena/spirekey-sdk';
 
 /**
  * SpireKey host (embedded wallet).
- * Live Chainweaver:  https://chainweaver.kadena.io  (default)
+ * Live Chainweaver:  https://chainweaver.kadena-community.org  (default)
  * Local SpireKey:    http://localhost:1337
  */
 export const SPIREKEY_HOST: string =
   (import.meta.env.VITE_SPIREKEY_HOST as string | undefined) ??
-  'https://chainweaver.kadena.io';
+  'https://chainweaver.kadena-community.org';
 
 /**
  * testnet06 — the live KDA Community Edition testnet (Feb 2026+).

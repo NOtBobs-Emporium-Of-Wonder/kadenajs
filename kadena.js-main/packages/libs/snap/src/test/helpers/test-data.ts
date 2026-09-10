@@ -20,7 +20,7 @@ export const MOCK_TESTNET = {
     'https://explorer.chainweb-community.org/testnet/transfer/[[address]]?token=coin',
   blockExplorerTransaction:
     'https://explorer.chainweb-community.org/testnet/tx/[[txHash]]',
-  buyPageUrl: 'https://faucet.testnet.chainweb.com',
+  buyPageUrl: 'https://faucet.testnet.chainweb-community.org',
   isTestnet: true,
   name: 'Kadena Testnet',
   networkId: 'testnet06',

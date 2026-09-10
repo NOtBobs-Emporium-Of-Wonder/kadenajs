@@ -33,7 +33,7 @@ export default function createDefaultNetworks(): Network[] {
       nodeUrl: 'https://api.testnet.chainweb-community.org/chainweb/0.0',
       transactionListUrl: 'https://graph.testnet.kadena.network/graphql',
       transactionListTtl: 30000,
-      buyPageUrl: 'https://faucet.testnet.chainweb.com',
+      buyPageUrl: 'https://faucet.testnet.chainweb-community.org',
     },
   ];
 }

@@ -8,7 +8,7 @@ const coreConfig = {
 const metadata = {
   name: 'Kadena Chainweaver v3',
   description: 'Wallet Connect plugin for Kadena Chainweaver v3',
-  url: 'https://chainweaver.kadena.io/',
+  url: 'https://chainweaver.kadena-community.org/',
   icons: [],
 };
 

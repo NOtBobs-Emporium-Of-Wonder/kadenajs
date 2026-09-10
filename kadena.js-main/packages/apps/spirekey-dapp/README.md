@@ -19,7 +19,7 @@ SpireKey vs Chainweaver at a glance:
 | Auth | WebAuthn / Passkey | Ed25519 key file |
 | Seed phrase | ✗ never | ✓ required |
 | Mobile-friendly | ✓ | limited |
-| Hosted | chainweaver.kadena.io | self-hosted or desktop |
+| Hosted | chainweaver.kadena-community.org | self-hosted or desktop |
 
 ---
 
@@ -44,10 +44,10 @@ Open [http://localhost:5173](http://localhost:5173).
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `VITE_SPIREKEY_HOST` | `https://chainweaver.kadena.io` | SpireKey wallet host |
-| `VITE_NETWORK_ID` | `testnet04` | Kadena network ID |
-| `VITE_CHAIN_ID` | `14` | Default chain (0–19) |
-| `VITE_CHAINWEB_API_BASE` | `https://api.testnet.chainweb.com` | Chainweb node base URL |
+| `VITE_SPIREKEY_HOST` | `https://chainweaver.kadena-community.org` | SpireKey wallet host |
+| `VITE_NETWORK_ID` | `testnet06` | Kadena network |
+| `VITE_CHAIN_ID` | `14` | Default chain ID (0–19) |
+| `VITE_CHAINWEB_API_BASE` | `https://api.testnet.chainweb-community.org` | Chainweb node base URL |
 
 ### Using a local SpireKey instance
 
@@ -104,7 +104,7 @@ spirekey-dapp/
 import { initSpireKey, connect, sign } from '@kadena/spirekey-sdk';
 
 // Initialise once (e.g. in useEffect)
-initSpireKey({ hostUrl: 'https://chainweaver.kadena.io' });
+initSpireKey({ hostUrl: 'https://chainweaver.kadena-community.org' });
 
 // Connect — opens a SpireKey popup, returns the account when done
 const account = await connect('testnet04', '14');

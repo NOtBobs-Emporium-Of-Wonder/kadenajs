@@ -4,7 +4,7 @@ import { CHAINWEB_API_BASE, NETWORK_ID } from './env';
 /**
  * Creates a Chainweb API URL for a given path.
  * e.g. chainwebUrl('chain/14/pact') →
- *   https://api.testnet.chainweb.com/chainweb/0.0/testnet04/chain/14/pact
+ *   https://api.testnet.chainweb-community.org/chainweb/0.0/testnet06/chain/14/pact
  */
 export const chainwebUrl = (path: string): string =>
   `${CHAINWEB_API_BASE}/chainweb/0.0/${NETWORK_ID}/${path}`;
